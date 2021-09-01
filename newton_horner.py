@@ -69,3 +69,5 @@ file.close()
 #mi_funcion_sol2 = Newton_method(Coef, 0, 0.0001, 1000) 
 tiempo_inicio = time.perf_counter()
 tiempo_computo = time.perf_counter() - tiempo_inicio
+
+#pito
