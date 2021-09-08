@@ -21,3 +21,4 @@ def division (v, p):
     while x[0] == 0:
         x.pop(0)
     return f[:b], x
+Jeje
