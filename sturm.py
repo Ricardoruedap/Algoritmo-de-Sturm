@@ -83,5 +83,5 @@ def raices (Coeficientes,izq,der):
             else:
                 c2+=1
     
-    print("Se encontraron ",c1-c2, " raíces en el intervalo ","[",izq,",", der,"]")
+    print("Para la función f(x)=x^6-4x^3+x-2 se encontraron un total de:",c1-c2, "raíces en el intervalo ","(",izq,",",der,")")
 raices([1,0,0,-4,0,1,-2],-2,2)
