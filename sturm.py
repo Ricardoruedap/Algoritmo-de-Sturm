@@ -8,19 +8,19 @@ Created on Wed Sep  8 10:44:40 2021
 #Algoritmo de Sturm
 
 def division (v, p):
-    f = list(v)
     n = p[0]
+    Lista = list(v)
     for i in range (len(v)-(len(p)-1)):
-        f[i] = f[i]/n 
-        co = f[i]
-        if co!= 0: 
+        Lista[i] = Lista[i]/n 
+        coef = Lista[i]
+        if coef!= 0: 
             for j in range(1, len(p)):
-                f[i + j] = f[i + j] - p[j] * co
-    b = -(len(p)-1)
-    x = f[b:]
-    while x[0] == 0:
-        x.pop(0)
-    return f[:b], x
+                Lista[j + i] = - p[j] * coef + Lista[i + j]
+    z = -(len(p)-1)
+    x_0 = Lista[z:]
+    while x_0[0] == 0:
+        x_0.pop(0)
+    return Lista[:z], x_0
 
 #Se pidiran las siguientes cosas, la funcion que por lo que se va a necesitar una funcion esta se metera en forma de lista, y tambien se va a pedir un rango menor y mayor, que sirve para encontrar los siguientes datos   
 def raices (Coeficientes,izq,der):
