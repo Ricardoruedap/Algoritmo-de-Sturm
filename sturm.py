@@ -58,7 +58,8 @@ def raices (Coeficientes,izq,der):
         for k in range(r):
             aux = aux*der+li[i][k]
         l2.append(aux)
-    print("\n", l1st)
+    print("Evolución de las cadenas:\n")
+    print(l1st)
     print("\n", l2)
     for i in range(len(l1st)-1):
         if l1st[i] > 0:
